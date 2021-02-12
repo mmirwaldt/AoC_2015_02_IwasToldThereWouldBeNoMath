@@ -19,12 +19,12 @@ public class WrappingPaperCalculatorTest {
     @MethodSource("wrappingPaperCalculator")
     void test(WrappingPaperCalculator wrappingPaperCalculator) {
         assertEquals(0, wrappingPaperCalculator.calculateWrappingPaper(0,0,0));
-        assertEquals(7, wrappingPaperCalculator.calculateWrappingPaper(1,1,1));
-        assertEquals(11, wrappingPaperCalculator.calculateWrappingPaper(2,1,1));
-        assertEquals(11, wrappingPaperCalculator.calculateWrappingPaper(1,2,1));
-        assertEquals(11, wrappingPaperCalculator.calculateWrappingPaper(1,1,2));
-        assertEquals(18, wrappingPaperCalculator.calculateWrappingPaper(1,2,2));
-        assertEquals(28, wrappingPaperCalculator.calculateWrappingPaper(2,2,2));
-        assertEquals(24, wrappingPaperCalculator.calculateWrappingPaper(1,2,3));
+        assertEquals(2 * (1 * 1 + 1 * 1 + 1 * 1) + 1 * 1, wrappingPaperCalculator.calculateWrappingPaper(1,1,1));
+        assertEquals(2 * (2 * 1 + 2 * 1 + 1 * 1) + 1 * 1, wrappingPaperCalculator.calculateWrappingPaper(2,1,1));
+        assertEquals(2 * (1 * 2 + 1 * 1 + 2 * 1) + 1 * 1, wrappingPaperCalculator.calculateWrappingPaper(1,2,1));
+        assertEquals(2 * (1 * 1 + 1 * 2 + 1 * 2) + 1 * 1, wrappingPaperCalculator.calculateWrappingPaper(1,1,2));
+        assertEquals(2 * (1 * 2 + 1 * 2 + 2 * 2) + 1 * 2, wrappingPaperCalculator.calculateWrappingPaper(1,2,2));
+        assertEquals(2 * (2 * 2 + 2 * 2 + 2 * 2) + 2 * 2, wrappingPaperCalculator.calculateWrappingPaper(2,2,2));
+        assertEquals(2 * (1 * 2 + 1 * 3 + 2 * 3) + 1 * 2, wrappingPaperCalculator.calculateWrappingPaper(1,2,3));
     }
 }
