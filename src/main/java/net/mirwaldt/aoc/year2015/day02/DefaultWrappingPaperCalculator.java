@@ -1,4 +1,4 @@
-package net.mirwaldt.day2;
+package net.mirwaldt.aoc.year2015.day02;
 
 public class DefaultWrappingPaperCalculator implements WrappingPaperCalculator {
     @Override

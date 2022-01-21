@@ -1,4 +1,4 @@
-package net.mirwaldt.day2;
+package net.mirwaldt.aoc.year2015.day02;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
